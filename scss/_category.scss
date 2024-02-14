@@ -1,0 +1,137 @@
+@import 'config';
+@import 'utility';
+@import 'buttons';
+
+%block {
+    width:44%;
+    height: 500px;
+    padding:10px;
+    background: $complementary-color;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: $border-bottom;
+    box-shadow: $box-shadow;
+
+}
+
+%descript {
+    width:50.9%;
+    margin-top: 130px;
+    height:300px;
+    padding:10px;
+    background: $subs-background;
+    border: solid 2px $complementary-color;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+
+    h4{
+        font-size:40px;
+        text-align:center;
+        margin:10px;
+        padding:10px;
+        font-weight:bold;
+        text-shadow: $text-shadow;
+    }
+
+    p{
+        text-align:left;
+        padding:20px;
+        margin: 20px;
+        font-weight: bold;
+    }
+
+    .button-3 {
+        padding:30px;
+        border-radius: 80%;
+        margin-left:270px;
+        background:$complementary-color;
+        text-align:center;
+        box-shadow: $box-shadow;
+
+        a{
+            text-decoration:none;
+            font-size: 40px;
+            color: $nav-color;
+            font-weight:bold;
+        }
+    }
+
+}
+
+#category {
+    
+    #search-bar {
+        text-align: center;
+        padding:60px;
+        margin-bottom:20px;
+        box-shadow: $box-shadow;
+        background: $complementary-color ;
+
+        label{
+            font-size: 30px;
+            margin:10px;
+            font-weight: bold;
+            text-shadow: $text-shadow;
+        }
+
+        input {
+            padding:5px 25% 5px 0;
+            border-radius:10px;
+            margin:5px;
+            background:none;
+            border-top:none;
+            border-left:none;
+            border-right:none;
+            border-bottom:solid 1px;
+            font-size: 18px;
+
+            &::placeholder{
+                color:black;
+            }
+        }
+    }
+
+}
+
+    #category-2{
+        background:$secondary-color;
+
+        .section-1{
+            margin:5px;
+            padding:20px;
+            width:99%;
+            height: 600px;
+            box-shadow:$box-shadow;
+
+            #block-2, 
+            #block-4,
+            #block-6{
+                float:left;
+                @extend %block;
+                margin-left: 60px;
+            }
+        
+            #block-3, 
+            #block-5{
+                float:right;
+                @extend %block;
+                margin-right: 60px;
+            }
+
+
+            #descript-block-1,
+            #descript-block-3,
+            #descript-block-5{
+                float:right;
+                @extend %descript;
+                margin-right: 5px;
+            }
+
+            #descript-block-2,
+            #descript-block-4{
+                float:left;
+                @extend %descript;
+                margin-left: 5px;
+            }
+        }
+    }

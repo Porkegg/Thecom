@@ -1,0 +1,87 @@
+@import 'config';
+@import 'utility';
+@import 'buttons';
+
+#account {
+    background: $secondary-color;
+    backdrop-filter: blur(100px);
+    width:100%;
+    height:600px;
+
+    #create-account{
+        margin-left: 12%;
+        margin-top:20px;
+        padding:20px 0 20px 20px;
+        width:35%;
+        height:550px;
+        background:$complementary-color;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        float:left;
+        box-shadow: $box-shadow;
+
+        form {
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            color: $nav-color;
+            text-shadow: $text-shadow;
+
+            h2 {
+                font-size: 60px;
+                font-weight: bold;
+            }
+
+            h4{
+                font-size: 20px;
+                font-weight: bold;
+                margin: 10px 10px 10px 10px;
+                padding:10px;
+            }
+
+            label {
+                margin: 10px;
+                display:flex;
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+            input{
+                padding:5px 45% 5px 0;
+                border-radius: 5px;
+            }
+        }
+
+        #other {
+            text-align: center;
+            margin-right: 10px;
+
+            a{
+                color: $nav-color;
+                font-weight: bold;
+            }
+
+            a:hover{
+                color: orange;
+            }
+        }
+    }
+
+    #other{
+        margin:20px;
+        img{
+            float: right;
+        }
+    }
+
+    #img-account {
+        margin-top:20px;
+        img{    
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            opacity: 0.8.5;
+            box-shadow:$box-shadow ;
+        }
+    }
+
+}

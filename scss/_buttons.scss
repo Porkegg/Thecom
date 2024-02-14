@@ -1,0 +1,44 @@
+%button{
+    margin:10px;
+    padding: 15px 50px;
+    color: $nav-color;
+
+    a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: $nav-color;
+    }
+
+    &:hover{
+        color:$complementary-color;
+    }
+}
+
+#button-1 {
+    @extend %button;
+    border-radius: 90%;
+    background: $complementary-color;
+}
+
+#button-2{
+    @extend %button;
+    border-radius:10px;
+    background: maroon;
+    margin-left: 85px;
+}
+
+#button-3{
+    @extend %button;
+    background: maroon;
+    border-radius:20px;
+    margin-left: 30px;
+}
+
+#button-4{
+    @extend %button;
+    background: maroon;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top:20px;
+}
